@@ -24,4 +24,7 @@ urlpatterns = [
     path('', views.index),
 ]
 
-handler404 = 'mysite.views.error_404_view'
+# 이렇게 하는 이유는 에러가 났을 때 에러에 대한 컨텍스트를 보내고 싶을 때 사용
+
+#handler404 = 'mysite.views.error_404_view'
+#handler505 = 'mysite.views.errer_500_view'
