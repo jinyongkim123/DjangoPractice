@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
     <h1>
-        <a href="{% url 'polls:detail' question_id=10 %}">question 10</a>
+        <a href="{% url 'polls:results' question_id=10 %}">question 10</a>
     </h1>
     <h1>{{ greetings|lower }}</h1>
     <h2>I am from {{ location.city }}, {{ location.country }}</h2>
