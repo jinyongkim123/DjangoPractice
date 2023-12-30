@@ -3,8 +3,8 @@ from django.shortcuts import render
 
 def index(request):
     # # trigger 500 error
-    pass
     #return HttpResponse("main index")
+    return render(request, 'main.html')
 
 def error_404_view(request, exception):
     #return HttpResponseNotFound("The page is not found!")
